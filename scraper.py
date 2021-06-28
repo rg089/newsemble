@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-# from datetime import datetime
+from datetime import datetime
 import re
 
 class IndiaToday():
@@ -113,6 +113,8 @@ class TimesOfIndiaNews():
         data = requests.get(url).content
         soup = BeautifulSoup(data,"lxml")
         div = soup.find("div", class_= "_3YYSt clearfix ")
+        if div is None:
+            div = soup.find("div", class_= "_3YYSt clearfix")
         if div is not None:
             time = soup.find("div", class_="yYIu- byline").find("span").text
             time = re.sub("Updated:|IST|AM|PM", "", time, flags=re.IGNORECASE).strip()
