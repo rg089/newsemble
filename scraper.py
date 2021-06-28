@@ -10,7 +10,7 @@ class IndiaToday():
         for i in range(3):
           url = "https://www.indiatoday.in/top-stories" + "?page=" + str(i)
           html = requests.get(url)
-          soup = BeautifulSoup(html.text,"html5lib")
+          soup = BeautifulSoup(html.text,"lxml")
           for i in soup.find_all(class_ = "catagory-listing"):
               news_url = 'https://www.indiatoday.in/'+i.a["href"]
               news_title, news_content, time = IndiaToday().get_content(news_url)
@@ -28,7 +28,7 @@ class IndiaToday():
     @staticmethod
     def get_content(url):
         ar = requests.get(url)
-        article = BeautifulSoup(ar.text,"html.parser")
+        article = BeautifulSoup(ar.text,"lxml")
         title = article.find("h1").get_text()
         try:
           time = article.find("span", class_="update-data").text
@@ -48,7 +48,7 @@ class TheHindu():
     @staticmethod
     def get_content(url):
         html = requests.get(url)
-        article = BeautifulSoup(html.text,"html5lib")
+        article = BeautifulSoup(html.text,"lxml")
         for i in article.find_all("span", class_="blue-color ksl-time-stamp"):
             if i.find("none") is not None:
                 time = i.get_text()
@@ -65,7 +65,7 @@ class TheHindu():
     def generate_dataset():
         url = "https://www.thehindu.com/trending/"
         html = requests.get(url)
-        soup = BeautifulSoup(html.text,"html5lib")        
+        soup = BeautifulSoup(html.text,"lxml")        
         data = []
         
         for story in soup.find_all(class_ = "story-card-news"):
@@ -143,7 +143,7 @@ class NDTVNEWS():
         data= []
         url = "https://www.ndtv.com/top-stories"
         html = requests.get(url)
-        soup = BeautifulSoup(html.text,"html5lib")
+        soup = BeautifulSoup(html.text,"lxml")
         for i in soup.find_all("h2",{"class" : "newsHdng"}):
             news_title = i.get_text().strip()
             news_url = i.a["href"]
@@ -160,7 +160,7 @@ class NDTVNEWS():
     @staticmethod
     def get_content(url):
         ar = requests.get(url)
-        article = BeautifulSoup(ar.text,"html.parser")
+        article = BeautifulSoup(ar.text,"lxml")
         if article.find('div',{'id':"ins_storybody"}) == None:
             return None, None
         else:
@@ -179,7 +179,7 @@ class TheIndianExpress():
         data= []
         url = "https://indianexpress.com/section/india/"
         html = requests.get(url)
-        soup = BeautifulSoup(html.text,"html5lib")
+        soup = BeautifulSoup(html.text,"lxml")
         for i in soup.find_all(class_ = "title"):
             news_title = i.get_text()[8:-8]
             news_url = i.a["href"]
@@ -199,7 +199,7 @@ class TheIndianExpress():
     @staticmethod
     def get_content(url):
         ar = requests.get(url)
-        article = BeautifulSoup(ar.text,"html.parser")
+        article = BeautifulSoup(ar.text,"lxml")
         if article.find(id="pcl-full-content") == None:
             return None, None
         else:
