@@ -1,6 +1,7 @@
 from scraper import Data
 import os
 import pickle
+from db import con
 
 def filter_source(data, source):
     if source == "all":
@@ -20,3 +21,18 @@ def read_data(source):
             source = "toi"  # Changing source to prevent heroku timeout
         data = Data.collect(source)
     return data
+
+def read_data_db(source):
+    coll = con()
+    source = source.upper()
+    if source == "ALL":
+        # print(len(list(coll.find())))
+        # print(list(coll.find({},{"_id":0})))
+        return list(coll.find({},{"_id":0}))
+    else:
+        # print(list(coll.find({"source":source})))
+        return list(coll.find({"source":source},{"_id":0}))
+
+    
+
+

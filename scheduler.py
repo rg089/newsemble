@@ -1,10 +1,7 @@
-import pickle
 from scraper import Data
-
-# dump to pickle for instant access.
+from db import con
 
 data = Data.collect(source="all")
-with open("data.pkl", "wb") as f:
-    pickle.dump(data, f)
-
-# connect to database.
+coll = con()
+coll.remove()   # Removes all the documents in the database 
+coll.insert_many(data)    # Inserts the new ones
