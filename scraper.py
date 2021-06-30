@@ -1,3 +1,7 @@
+"""
+Authors: Rishabh Gupta (rg089), Vishal Singhania (vishalvvs)
+"""
+
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
@@ -183,7 +187,7 @@ class TheIndianExpress():
         html = requests.get(url)
         soup = BeautifulSoup(html.text,"lxml")
         for i in soup.find_all(class_ = "title"):
-            news_title = i.get_text()[8:-8]
+            news_title = i.get_text()
             news_url = i.a["href"]
             news_content, time = TheIndianExpress().get_content(news_url) 
             if news_content is not None:

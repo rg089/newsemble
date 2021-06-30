@@ -1,7 +1,12 @@
+"""
+Authors: Rishabh Gupta (rg089), Vishal Singhania (vishalvvs)
+"""
+
+
 from scraper import Data
 import os
 import pickle
-from db import con
+from db import connect
 
 def filter_source(data, source):
     if source == "all":
@@ -23,7 +28,7 @@ def read_data(source):
     return data
 
 def read_data_db(source):
-    coll = con()
+    coll = connect()
     source = source.upper()
     if source == "ALL":
         # print(len(list(coll.find())))
