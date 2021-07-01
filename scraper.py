@@ -193,9 +193,9 @@ class TheIndianExpress():
             if news_content is not None:
                 article = {}
                 article["link"] = news_url
-                article["content"] = news_content
+                article["content"] = news_content.strip()
                 article["source"] = "TIE"
-                article["title"] = news_title
+                article["title"] = news_title.strip()
                 article["time"] = time
                 data.append(article)
             else:
