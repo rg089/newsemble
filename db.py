@@ -6,8 +6,8 @@ from pymongo import MongoClient
 import os
 
 def connect():
-  password = os.environ.get("password")
-  client = MongoClient(f"mongodb+srv://Vishal:{password}@newsemble.j40x6.mongodb.net/News?retryWrites=true&w=majority")
+  pwd = os.environ.get("pwd")
+  client = MongoClient(f"mongodb+srv://Vishal:{pwd}@newsemble.j40x6.mongodb.net/News?retryWrites=true&w=majority")
 
   #Db name and Collection Name
   db = client["News"]
