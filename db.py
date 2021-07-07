@@ -11,8 +11,10 @@ def connect():
 
   #Db name and Collection Name
   db = client["News"]
-  collection = db["scraper"]
-  return collection
+  recent = db["scraper"]
+  dataset = db["dataset"]
+
+  return recent,dataset
 
 
 
