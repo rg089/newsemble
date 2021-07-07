@@ -30,6 +30,7 @@ def read_data(source):
 def read_data_db(source):
     coll, _ = connect()
     source = source.upper()
+    if source == "ALL":
         return list(coll.find({},{"_id":0}))
     else:
         return list(coll.find({"source":source},{"_id":0}))
