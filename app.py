@@ -1,3 +1,7 @@
+"""
+Authors: Vishal Singhania (vishalvvs), Rishabh Gupta (rg089)
+"""
+
 from flask import Flask
 from flask_restful import Api, Resource
 from utils import read_data, read_data_db

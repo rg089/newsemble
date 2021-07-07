@@ -1,3 +1,7 @@
+"""
+Authors: Rishabh Gupta (rg089), Vishal Singhania (vishalvvs)
+"""
+
 from scraper import Data
 import os
 import pickle
@@ -26,11 +30,8 @@ def read_data_db(source):
     coll = con()
     source = source.upper()
     if source == "ALL":
-        # print(len(list(coll.find())))
-        # print(list(coll.find({},{"_id":0})))
         return list(coll.find({},{"_id":0}))
     else:
-        # print(list(coll.find({"source":source})))
         return list(coll.find({"source":source},{"_id":0}))
 
     
