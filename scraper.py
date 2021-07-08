@@ -18,7 +18,7 @@ class IndiaToday():
           for i in soup.find_all(class_ = "catagory-listing"):
               news_url = 'https://www.indiatoday.in/'+i.a["href"]
               news_title, news_content, time = IndiaToday().get_content(news_url)
-              if news_content == None:
+              if news_content == None or news_content == "":
                   continue
               article = {}
               article["link"] = news_url
