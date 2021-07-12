@@ -3,19 +3,16 @@ API for fetching data from news websites (Indian)
 
 [Website](http://www.newsemble.ml/news/)
 
-⭐ If you find the project helpful star us on GitHub  — it motivates us a lot!
-
-> Newsemble is a programmatic implementation for web scrapping, this API has been built using python programming with beautiful soup web scrapping library. 
-  Newsemble retrieves the news articles from the News websites namely Times of India (TOI), India Today, The Hindu, NDTV news and The Indian Express. 
-  Developers can make use of this API to fetch the news dataset with the elements such as Headlines, Content, Source, link and time of release.  
-  
+> Newsemble is a programmatic implementation of web scraping. This API has been built using Python, BeautifulSoup and MongoDB. 
+  Newsemble retrieves the news articles from some Indian news websites namely Times of India, India Today, The Hindu, NDTV and The Indian Express. 
+  Developers can make use of this API to fetch the news dataset with elements such as the headlines, content, source, link and time.  
   
   
 <hr style="border:2px solid gray"> </hr>
 
 ## Table of contents
 * [Technologies](#technologies)
-* [Project files description](#project-files-description)
+* [File Structure and Description](#file-structure-and-description)
 * [Getting started](#getting-started)
 
 
@@ -23,20 +20,20 @@ API for fetching data from news websites (Indian)
 	
 ## Technologies
 Project is created with:
-* python version: 3.6
-* MongoDB
+* Python 3
+* PyMongo
 
 <hr style="border:2px solid gray"> </hr>
 
-## Project files description
+## File Structure and Description
 
-* app.py - Flask code for calling the scrapper function
-* scraper.py  - Core file to scrape news websites
-* db.py - MongoDB database for storing the scarpped data
-* utils.py - 
-* scheduler.py - Scheduling Heroku to run at regular intervals of time
-* Procfile  - Commands to init Heroku platform
-* requirements.txt - Library requirments 
+* app.py - Flask code for the API
+* scraper.py  - Collection of scrapers for the various news sites.
+* db.py - Connecting and Using MongoDB
+* utils.py - Utility Functions
+* scheduler.py - Scheduler 
+* Procfile - Pointer to the location (for cloud)
+* requirements.txt - Python Requirments 
 
 
 <hr style="border:2px solid gray"> </hr>
@@ -46,7 +43,7 @@ This project can be accessed by using following setup
 
 **Request format**
 ```
-$ Import requests
+$ import requests
 $ url = "http://www.newsemble.ml/news/"
 $ requests.get(url).json()
 
@@ -54,16 +51,18 @@ $ requests.get(url).json()
 
 **Response format**
 ```
-{   ‘link’      :  ‘Source_link’,
-    ‘content’   :  ‘Content_text’,    
-    ‘source’    :  ‘News_source’,
-    ‘title’     :  ‘Headline text’, 
-    ‘time       :  ‘Article release time and date’  
+{   ‘link’      :  $source_link$,
+    ‘content’   :  $content_text$,    
+    ‘source’    :  $news_source$,
+    ‘title’     :  $headline$’, 
+    ‘time       :  $date_time_of_article$  
  }
-
 ```
 **Sample output**
 
 ![image](https://user-images.githubusercontent.com/52444089/125032819-1f5b3580-e0ac-11eb-9662-efa79dc0e099.png)
 
 ## Authors
+1. Rishabh Gupta (rg089)
+2. Vishal Singhania (vishalvvs)
+3. Roshan Kumar (roshankumarg529)
