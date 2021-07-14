@@ -1,44 +1,45 @@
-# NEWSEMBLE
-API for fetching data from news websites (Indian)
+<h1 align="center"> :newspaper: Newsemble :newspaper: </h1>
 
-[Website](http://www.newsemble.ml/news/)
+<p align="center">
+  <br>
+	<b><i>An <a href="http://www.newsemble.ml/news/">API</a> for fetching the current news.</b></i>
+  <br><br>
+</p>
 
-> Newsemble is a programmatic implementation of web scraping. This API has been built using Python, BeautifulSoup and MongoDB. 
-  Newsemble retrieves the news articles from some Indian news websites namely Times of India, India Today, The Hindu, NDTV and The Indian Express. 
-  Developers can make use of this API to fetch the news dataset with elements such as the headlines, content, source, link and time.  
-  
-  
-<hr style="border:2px solid gray"> </hr>
+<h1 align="center"> :bookmark: About :bookmark: </h1><br>
 
-## Table of contents
+> Newsemble is an API that provides easy access to the current news for programmatic analysis. It has been built using Python, BeautifulSoup and MongoDB.<br> 
+  The data is scraped from [these news websites](#currently-supported-sites) every hour, stored in a database on the cloud and whenever requested, the most recent articles are promptly served.<br>
+  Developers can make use of this API to fetch current data with each article having the following fields: <br>***Headlines, Content, Source, Link and Time***.  
+
+<hr style="border:2px solid gray"> </hr><br>
+
+## :spiral_notepad: Table of contents
 * [Technologies](#technologies)
 * [File Structure and Description](#file-structure-and-description)
 * [Getting started](#getting-started)
+* [Currently Supported Sites](#currently-supported-sites)
 
 
-<hr style="border:2px solid gray"> </hr>
-	
-## Technologies
-Project is created with:
+## :computer: Technologies
+Newsemble is created with:
+
 * Python 3
+* Flask
 * PyMongo
+* BeautifulSoup
 
-<hr style="border:2px solid gray"> </hr>
+## :open_file_folder: File Structure and Description
 
-## File Structure and Description
+* *app.py* - Flask code for the API
+* *scraper.py*  - Collection of scrapers for the various news sites.
+* *db.py* - Connecting and Using MongoDB
+* *utils.py* - Utility Functions
+* *scheduler.py* - Scheduler 
+* *Procfile* - For Deployment
+* *requirements.txt* - Python Requirments 
 
-* app.py - Flask code for the API
-* scraper.py  - Collection of scrapers for the various news sites.
-* db.py - Connecting and Using MongoDB
-* utils.py - Utility Functions
-* scheduler.py - Scheduler 
-* Procfile - Pointer to the location (for cloud)
-* requirements.txt - Python Requirments 
-
-
-<hr style="border:2px solid gray"> </hr>
-
-## Getting-started
+## :rocket: Getting-started
 This project can be accessed by using following setup
 
 **Request format**
@@ -46,12 +47,12 @@ This project can be accessed by using following setup
 $ import requests
 $ url = "http://www.newsemble.ml/news/"
 $ requests.get(url).json()
-
 ```
 
 **Response format**
 ```
-{   ‘link’      :  $source_link$,
+{   
+    ‘link’      :  $source_link$,
     ‘content’   :  $content_text$,    
     ‘source’    :  $news_source$,
     ‘title’     :  $headline$’, 
@@ -62,7 +63,26 @@ $ requests.get(url).json()
 
 ![image](https://user-images.githubusercontent.com/52444089/125032819-1f5b3580-e0ac-11eb-9662-efa79dc0e099.png)
 
-## Authors
-1. Rishabh Gupta (rg089)
-2. Vishal Singhania (vishalvvs)
-3. Roshan Kumar (roshankumarg529)
+## :gear: Currently Supported Sites
+* [Times of India](https://timesofindia.indiatimes.com/news)
+* [India Today](https://www.indiatoday.in/)
+* [The Hindu](https://www.thehindu.com/)
+* [NDTV](https://www.ndtv.com/)
+* [The Indian Express](https://indianexpress.com/)
+
+<hr style="border:2px solid gray"> </hr><br>
+
+<h1 align="center">:pray: Thanks!</h1>
+
+<p align="center">
+  <b>All contributions are welcome and appreciated. :+1: </b><br>
+	<b><i>If you liked this project, or found it useful in any way, please drop a :star2:!</b></i><br><br>
+</p>
+
+<h1 align="center"> :writing_hand: Authors :writing_hand: </h1>
+
+<p align="center">
+	  :black_nib: <a href="https://github.com/rg089">Rishabh Gupta</a><br>
+	  :black_nib: <a href="https://github.com/vishalvvs">Vishal Singhania</a><br>
+	  :black_nib: <a href="https://github.com/roshankumarg529">Roshan Kumar</a><br>
+</p>
