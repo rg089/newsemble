@@ -9,4 +9,9 @@ data = Data.collect(source="all")
 recent,dataset = connect()
 recent.remove()
 recent.insert_many(data)
-dataset.insert_many(data)
+for i in data:
+    try:
+        dataset.insert_one(i)
+    except:
+        continue
+# dataset.insert_many(data)
