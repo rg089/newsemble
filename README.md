@@ -107,7 +107,7 @@ $ requests.get(url).json()
     ‘link’      :  $source_link$,
     ‘content’   :  $content_text$,    
     ‘source’    :  $news_source$,
-    ‘title’     :  $headline$’, 
+    ‘title’     :  $headline$, 
     ‘time       :  $date_time_of_article$  
  }
 ```
