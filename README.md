@@ -33,10 +33,10 @@
 <hr style="border:2px solid gray"> </hr><br>
 
 ## :spiral_notepad: Table of contents
-* [Technologies](#technologies)
-* [File Structure and Description](#file-structure-and-description)
-* [Getting started](#getting-started)
-* [Currently Supported Sites](#currently-supported-sites)
+* [Technologies](#computer-technologies)
+* [File Structure and Description](#open_file_folder-file-structure-and-description)
+* [Getting started](#rocket-getting-started)
+* [Currently Supported Sites](#gear-currently-supported-sites)
 
 
 ## :computer: Technologies
