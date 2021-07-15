@@ -7,11 +7,23 @@
 <a href="https://www.heroku.com/"> <img alt="Heroku" src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"/> </a>
 </h1>
 
+
 <p align="center">
   <br>
 	<b><i>An <a href="http://www.newsemble.ml/news/">API</a> for fetching the current news.</b></i>
   <br><br>
 </p>
+
+
+<h1 align = "center">
+	
+[![Visits Badge](https://badges.pufler.dev/visits/rg089/newsemble)](https://badges.pufler.dev)&nbsp; 
+![watchers Badge](https://img.shields.io/github/watchers/roshankumarg529/Data.svg)&nbsp;
+![Stars Badge](https://img.shields.io/github/stars/rg089/newsemble.svg)&nbsp;
+![Fork Badge](https://img.shields.io/github/forks/rg089/newsemble.svg)
+	
+</h1>
+
 
 <h1 align="center"> :bookmark: About :bookmark: </h1><br>
 
