@@ -1,4 +1,9 @@
 <h1 align="center"> :newspaper: Newsemble :newspaper: </h1>
+<p align="center">
+  <br>
+	<b><i>An <a href="http://www.newsemble.ml/news/">API</a> for fetching the current news.</b></i>
+  <br><br>
+</p>
 
 <h1 align="center">
 <a href="https://www.python.org"> <img alt = "python" src= "https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=darkgreen"/> </a>&nbsp; 
@@ -16,13 +21,6 @@
 ![Fork Badge](https://img.shields.io/github/forks/rg089/newsemble.svg)
 	
 </h1>
-
-
-<p align="center">
-  <br>
-	<b><i>An <a href="http://www.newsemble.ml/news/">API</a> for fetching the current news.</b></i>
-  <br><br>
-</p>
 
 
 
