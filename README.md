@@ -1,8 +1,11 @@
 <h1 align="center"> :newspaper: Newsemble :newspaper: </h1>
 
-<div class="center">
-<img alt="Python" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white"/> &nbsp; <img alt="Flask" src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white"/>&nbsp; <img alt="MongoDB" src ="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"/>&nbsp; <img alt="Heroku" src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"/>
-</div>
+<h1 align="center">
+<a href="https://www.python.org"> <img alt = "python" src= "https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=darkgreen"/> </a>&nbsp; 
+<a href="https://palletsprojects.com/p/flask/"> <img alt="Flask" src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white"/> </a> &nbsp; 
+<a href="https://www.mongodb.com/"> <img alt="MongoDB" src ="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"/>&nbsp; </a>
+<a href="https://www.heroku.com/"> <img alt="Heroku" src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"/> </a>
+</h1>
 
 <p align="center">
   <br>
