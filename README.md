@@ -72,23 +72,23 @@ This project can be accessed by using following setup
    </TR>
   <TR>
       <TD>www.newsemble.ml/news/toi</TD>
-      <TD>Link to fetch all the data from Times of India </TD>
+      <TD>Link to fetch data from Times of India </TD>
   </TR>
 <TR>
       <TD>www.newsemble.ml/news/th</TD>
-      <TD>Link to fetch all the data from The Hindu </TD>
+      <TD>Link to fetch data from The Hindu </TD>
   </TR>
  <TR>
       <TD>www.newsemble.ml/news/tie</TD>
-      <TD>Link to fetch all the data from The Indian Express </TD>
+      <TD>Link to fetch data from The Indian Express </TD>
   </TR>
  <TR>
       <TD>www.newsemble.ml/news/ndtv</TD>
-      <TD>Link to fetch all the data from NDTV news </TD>
+      <TD>Link to fetch data from NDTV news </TD>
   </TR>
 <TR>
       <TD>www.newsemble.ml/news/it</TD>
-      <TD>Link to fetch all the data from India Today </TD>
+      <TD>Link to fetch data from India Today </TD>
   </TR>
   
 </TABLE>
