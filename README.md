@@ -27,16 +27,16 @@
 <h1 align="center"> :bookmark: About :bookmark: </h1><br>
 
 > Newsemble is an API that provides easy access to the current news for programmatic analysis. It has been built using Python, BeautifulSoup and MongoDB.<br> 
-  The data is scraped from [these news websites](#gear-currently-supported-sites) every hour, stored in a database on the cloud and whenever requested, the most recent articles are promptly served.<br>
+  The data is scraped from [these news websites](#currently-supported-sites) every hour, stored in a database on the cloud and whenever requested, the most recent articles are promptly served.<br>
   Developers can make use of this API to fetch current data with each article having the following fields: <br>***Headlines, Content, Source, Link and Time***.  
 
 <hr style="border:2px solid gray"> </hr><br>
 
 ## :spiral_notepad: Table of contents
-* [Technologies](#computer-technologies)
-* [File Structure and Description](#open_file_folder-file-structure-and-description)
-* [Getting started](#rocket-getting-started)
-* [Currently Supported Sites](#gear-currently-supported-sites)
+* [Technologies](#technologies)
+* [File Structure and Description](#file-structure-and-description)
+* [Getting started](#getting-started)
+* [Currently Supported Sites](#currently-supported-sites)
 
 
 ## :computer: Technologies
@@ -62,11 +62,34 @@ This project can be accessed by using following setup
 
 **Navigation links**
 
-<TABLE>
+<TABLE BORDER="3">
+	<TH>Links </TH>
+       <TH>Description</TH>
+	
    <TR>
       <TD>www.newsemble.ml/news</TD>
-      <TD>Link to fetch the data --------</TD>
+      <TD>Link to fetch all the data from all sources</TD>
    </TR>
+  <TR>
+      <TD>www.newsemble.ml/news/toi</TD>
+      <TD>Link to fetch all the data from Times of India </TD>
+  </TR>
+<TR>
+      <TD>www.newsemble.ml/news/th</TD>
+      <TD>Link to fetch all the data from The Hindu </TD>
+  </TR>
+ <TR>
+      <TD>www.newsemble.ml/news/tie</TD>
+      <TD>Link to fetch all the data from The Indian Express </TD>
+  </TR>
+ <TR>
+      <TD>www.newsemble.ml/news/ndtv</TD>
+      <TD>Link to fetch all the data from NDTV news </TD>
+  </TR>
+<TR>
+      <TD>www.newsemble.ml/news/it</TD>
+      <TD>Link to fetch all the data from India Today </TD>
+  </TR>
   
 </TABLE>
 
