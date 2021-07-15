@@ -14,18 +14,17 @@ def filter_source(data, source):
     data = list(filter(lambda x: x["source"].lower()==source, data))
     return data
 
-def read_data(source):
-    source = source.lower()
-    fname = "data.pkl"
-    if os.path.exists(fname):
-        with open(fname, "rb") as f:
-            data = pickle.load(f)
-        data = filter_source(data, source)
-    else:
-        if source == "all":
-            source = "toi"  # Changing source to prevent heroku timeout
-        data = Data.collect(source)
-    return data
+def convert_to_datetime(articles):
+    mapper = {"IT": "%B %d, %Y %H:%M", "TH": "%B %d, %Y %H:%M", "TOI": "%b %d, %Y, %H:%M",
+              "NDTV": "%B %d, %Y %H:%M", "TIE": "%B %d, %Y %H:%M:%S"}
+    for i, article in enumerate(articles):
+        time_strformat = mapper[article["source"]]
+        time = article["time"]
+        time_conv = datetime.strptime(time, time_strformat)
+        articles[i]["time"] = time_conv
+
+    return articles
+
 
 def read_data_db(source):
     coll, _ = connect()
@@ -34,6 +33,7 @@ def read_data_db(source):
         return list(coll.find({},{"_id":0}))
     else:
         return list(coll.find({"source":source},{"_id":0}))
+   
 
     
 
