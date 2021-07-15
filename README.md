@@ -60,6 +60,17 @@ Newsemble is created with:
 ## :rocket: Getting-started
 This project can be accessed by using following setup
 
+**Navigation links**
+
+<TABLE>
+   <TR>
+      <TD>www.newsemble.ml/news</TD>
+      <TD>Link to fetch the data --------</TD>
+   </TR>
+  
+</TABLE>
+
+
 **Request format**
 ```
 $ import requests
