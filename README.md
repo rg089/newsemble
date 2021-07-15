@@ -1,5 +1,9 @@
 <h1 align="center"> :newspaper: Newsemble :newspaper: </h1>
 
+<div class="center">
+<img alt="Python" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white"/> &nbsp; <img alt="Flask" src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white"/>&nbsp; <img alt="MongoDB" src ="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"/>&nbsp; <img alt="Heroku" src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"/>
+</div>
+
 <p align="center">
   <br>
 	<b><i>An <a href="http://www.newsemble.ml/news/">API</a> for fetching the current news.</b></i>
