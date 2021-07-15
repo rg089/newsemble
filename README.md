@@ -27,7 +27,7 @@
 <h1 align="center"> :bookmark: About :bookmark: </h1><br>
 
 > Newsemble is an API that provides easy access to the current news for programmatic analysis. It has been built using Python, BeautifulSoup and MongoDB.<br> 
-  The data is scraped from [these news websites](#currently-supported-sites) every hour, stored in a database on the cloud and whenever requested, the most recent articles are promptly served.<br>
+  The data is scraped from [these news websites](#gear-currently-supported-sites) every hour, stored in a database on the cloud and whenever requested, the most recent articles are promptly served.<br>
   Developers can make use of this API to fetch current data with each article having the following fields: <br>***Headlines, Content, Source, Link and Time***.  
 
 <hr style="border:2px solid gray"> </hr><br>
