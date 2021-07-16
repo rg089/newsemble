@@ -36,6 +36,7 @@
 ## :spiral_notepad: Table of contents
 * [Technologies](#computer-technologies)
 * [File Structure and Description](#open_file_folder-file-structure-and-description)
+* [Pipeline](#hammer_and_wrench-pipeline)
 * [Getting started](#rocket-getting-started)
 * [Currently Supported Sites](#gear-currently-supported-sites)
 
@@ -58,7 +59,7 @@ Newsemble is created with:
 * *Procfile* - For Deployment
 * *requirements.txt* - Python Requirments 
 
-## Pipeline
+## :hammer_and_wrench: Pipeline
 ![Newsemble pipeline](https://user-images.githubusercontent.com/52444089/125912546-d572c104-9c64-4237-a1f8-81228f8a0774.png)
 
 ## :rocket: Getting-started
