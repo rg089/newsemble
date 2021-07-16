@@ -58,6 +58,9 @@ Newsemble is created with:
 * *Procfile* - For Deployment
 * *requirements.txt* - Python Requirments 
 
+## Pipeline
+![Newsemble pipeline](https://user-images.githubusercontent.com/52444089/125912546-d572c104-9c64-4237-a1f8-81228f8a0774.png)
+
 ## :rocket: Getting-started
 This project can be accessed by using following setup
 
