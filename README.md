@@ -1,6 +1,8 @@
 <h1 align="center"> :newspaper: Newsemble :newspaper: </h1>
+
 <p align="center">
   <br>
+	<a href="http://www.newsemble.ml/news/"><img src="https://user-images.githubusercontent.com/66423362/125942926-17368ab4-7513-44b8-978f-1b013f7e08a3.png" alt="Logo"></a><br>
 	<b><i>An <a href="http://www.newsemble.ml/news/">API</a> for fetching the current news.</b></i>
   <br><br>
 </p>
