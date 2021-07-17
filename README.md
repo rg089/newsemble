@@ -18,11 +18,15 @@
 <h1 align = "center">
 	
 
-[![Visits Badge](https://badges.pufler.dev/visits/rg089/newsemble)](https://badges.pufler.dev)&nbsp; 
-![watchers Badge](https://img.shields.io/github/watchers/rg089/newsemble.svg)&nbsp;
-![Stars Badge](https://img.shields.io/github/stars/rg089/newsemble.svg)&nbsp;
+[![Visits Badge](https://badges.pufler.dev/visits/rg089/newsemble)](https://badges.pufler.dev)
+![Stars Badge](https://img.shields.io/github/stars/rg089/newsemble.svg)
 ![Fork Badge](https://img.shields.io/github/forks/rg089/newsemble.svg)
+[![Github all releases](https://img.shields.io/github/downloads/rg089/newsemble/total.svg)](https://github.com/rg089/newsemble/releases/)
+![watchers Badge](https://img.shields.io/github/watchers/rg089/newsemble.svg)
+
 	
+	
+
 </h1>
 
 
