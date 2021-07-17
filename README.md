@@ -19,7 +19,7 @@
 	
 
 [![Visits Badge](https://badges.pufler.dev/visits/rg089/newsemble)](https://badges.pufler.dev)&nbsp; 
-![watchers Badge](https://img.shields.io/github/watchers/roshankumarg529/Data.svg)&nbsp;
+![watchers Badge](https://img.shields.io/github/watchers/rg089/newsemble.svg)&nbsp;
 ![Stars Badge](https://img.shields.io/github/stars/rg089/newsemble.svg)&nbsp;
 ![Fork Badge](https://img.shields.io/github/forks/rg089/newsemble.svg)
 	
