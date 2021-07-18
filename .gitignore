@@ -2,3 +2,4 @@ __pycache__/
 .idea/
 config.txt
 .env
+data.pkl
