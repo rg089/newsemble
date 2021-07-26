@@ -53,13 +53,13 @@ class TheHindu():
     def get_content(url):
         html = requests.get(url)
         article = BeautifulSoup(html.text,"lxml")
+        content = "", time = ""
         for i in article.find_all("span", class_="blue-color ksl-time-stamp"):
             if i.find("none") is not None:
                 time = i.get_text()
                 time = re.sub("Updated:|IST|AM|PM", "", time, flags=re.IGNORECASE).strip()
                 break
         # time = datetime.strptime(time, "%B %d, %Y %H:%M")
-        content = ""
         paras = article.find_all("p")[1:-5]
         for para in paras:
             content+=para.get_text()
