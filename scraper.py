@@ -53,7 +53,7 @@ class TheHindu():
     def get_content(url):
         html = requests.get(url)
         article = BeautifulSoup(html.text,"lxml")
-        content = "", time = ""
+        content = ""; time = ""
         for i in article.find_all("span", class_="blue-color ksl-time-stamp"):
             if i.find("none") is not None:
                 time = i.get_text()
