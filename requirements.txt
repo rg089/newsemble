@@ -4,7 +4,7 @@ Jinja2==2.10.1
 flask-restful==0.3.9
 requests==2.23.0
 bs4==0.0.1
-lxml==4.5.0
+lxml==4.6.5
 pymongo==3.9.0
 dnspython==2.1.0
 python-dotenv==0.18.0
