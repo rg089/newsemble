@@ -74,7 +74,9 @@ class TheHindu():
         
         for story in soup.find_all(class_ = "story-card-news"):
             news_title = story.get_text().split("\n")[6]
-            content_url = story.find_all("a")[2].get('href')
+            possible_links = [el.get("href", "") for el in story.find_all("a") if el.get("href", "").endswith(".ece")]
+            if len(possible_links) == 0: continue
+            content_url = possible_links[0]
             content, time = TheHindu.get_content(content_url)
             if content != "":
                 article = {}

@@ -3,3 +3,4 @@ __pycache__/
 config.txt
 .env
 data.pkl
+testing.py
